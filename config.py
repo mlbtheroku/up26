@@ -33,7 +33,7 @@ class Config(object):
     # Update channel for Force Subscribe
     UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "-1001523739263")
     # database session name, example: xurluploader
-    SESSION_NAME = os.environ.get("SESSION_NAME", "yuolpop")
+    SESSION_NAME = os.environ.get("SESSION_NAME", "up26")
     # database uri (mongodb)
     DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://aio:aio@aio.5z4gxok.mongodb.net/?retryWrites=true&w=majority")
     
