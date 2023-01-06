@@ -2,10 +2,10 @@ import os
 
 class Config(object):
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5833550185:AAFzUdwF-uiFxIVwzrVS7VepS5GH9tfv0Bk")
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    APP_ID = int(os.environ.get("APP_ID", 15830858))
+    API_HASH = os.environ.get("API_HASH", "2c015c994c57b312708fecc8a2a0f1a6")
     # Get these values from my.telegram.org
     # Banned Unwanted Members..
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
@@ -29,23 +29,23 @@ class Config(object):
     # watermark file
     DEF_WATER_MARK_FILE = ""
     # your telegram id
-    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+    OWNER_ID = int(os.environ.get("OWNER_ID", "5884190716"))
     # Update channel for Force Subscribe
-    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
+    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "-1001523739263")
     # database session name, example: xurluploader
-    SESSION_NAME = os.environ.get("SESSION_NAME", "")
+    SESSION_NAME = os.environ.get("SESSION_NAME", "yuolpop")
     # database uri (mongodb)
-    DATABASE_URL = os.environ.get("DATABASE_URL", "")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://aio:aio@aio.5z4gxok.mongodb.net/?retryWrites=true&w=majority")
     
     PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "0").split()))
     PRO_USERS.append(OWNER_ID)
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-100"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001860694129"))
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "False"))
     # maximum message length in Telegram
     MAX_MESSAGE_LENGTH = 4096
 
     # set timeout for subprocess
-    PROCESS_MAX_TIMEOUT = int(os.environ.get("TIME_LIMIT"))
+    PROCESS_MAX_TIMEOUT = int(os.environ.get("TIME_LIMIT", ""))
     
     # dict to hold the ReQuest queue
     ADL_BOT_RQ = {}
