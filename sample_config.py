@@ -2,10 +2,10 @@ import os
 
 class Config(object):
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5925088605:AAFMEvsPD8yx-O5kxVoBiwbKonsAjtKy3Z8")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5945346287:AAE3gmyeGs-oK2UxcgbTDWjr48an4iv-oSY")
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", 15830858))
-    API_HASH = os.environ.get("API_HASH", "2c015c994c57b312708fecc8a2a0f1a6")
+    APP_ID = int(os.environ.get("APP_ID", 22681384))
+    API_HASH = os.environ.get("API_HASH", "14ae45755537c723aab0564a80d723a9")
     # Get these values from my.telegram.org
     # Banned Unwanted Members..
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
